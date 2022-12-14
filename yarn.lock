@@ -36,26 +36,33 @@
     tslib "^2.3.0"
     zen-observable-ts "^1.2.5"
 
-"@axelar-network/axelarjs-sdk@^0.6.18":
-  version "0.6.18"
-  resolved "https://registry.yarnpkg.com/@axelar-network/axelarjs-sdk/-/axelarjs-sdk-0.6.18.tgz#132d3195c4373383eb02ab313dca45c1790b4659"
-  integrity sha512-p4VaPC9W7hTJDezlbQrYDKhMZ71GWwdQE5VdjxYC9aLD1OQ6TFVCmrZIMT+jEEY24byXGM7M4xcdCEfCnjNVXQ==
+"@axelar-network/axelar-cgp-solidity@^4.3.0":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@axelar-network/axelar-cgp-solidity/-/axelar-cgp-solidity-4.3.1.tgz#49877b2599083fdd4bda92d3eb0ccdfcfeff3785"
+  integrity sha512-efJsTvoGITUPr50PQc8fCwzT9JOJMnchW+WnXAivXaEm/mw2bcEAYX6dCcZn4j6tgFTAVZnYqrABItQwDaStag==
+
+"@axelar-network/axelarjs-sdk@^0.11.7":
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/@axelar-network/axelarjs-sdk/-/axelarjs-sdk-0.11.7.tgz#232020644a9bf215f5ee66a7594f61313ac0a309"
+  integrity sha512-U7vXJm8moyM1o1B90Wr+aD7FdSQRsDF7oVcQ4C1hgzPyNtqOA737/qGF1WGicX4GPcvqGISO2rSyUF4/rkE/5g==
   dependencies:
-    "@axelar-network/axelarjs-types" "^0.0.3"
+    "@axelar-network/axelar-cgp-solidity" "^4.3.0"
+    "@axelar-network/axelarjs-types" "^0.24.0"
     "@cosmjs/stargate" "^0.28.4"
     "@types/uuid" "^8.3.1"
     bech32 "^2.0.0"
     clone-deep "^4.0.1"
     cross-fetch "^3.1.5"
-    eslint-plugin-import "^2.25.4"
     ethers "^5.4.7"
     socket.io-client "^4.2.0"
+    standard-http-error "^2.0.1"
+    string-similarity-js "^2.1.4"
     uuid "^8.3.2"
 
-"@axelar-network/axelarjs-types@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@axelar-network/axelarjs-types/-/axelarjs-types-0.0.3.tgz#46b189f1afb9358628df49e76b3c31cb552fc258"
-  integrity sha512-Y3CgKAHOnVyU/0JFulUyZkSxeVkMEvt4eTbrXy8bx3GCAhqx7rc45fz2VJPVr1f24lFwEAGGc5VbeGrXZodssw==
+"@axelar-network/axelarjs-types@^0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@axelar-network/axelarjs-types/-/axelarjs-types-0.24.0.tgz#ab9cc52690206a36475a1e026aefc74d578ea229"
+  integrity sha512-L353tkWLnujTcaEc3hMK51aiqY7DzEPfBNU9mluvtZIN9WsAbW2F3Rpj3UceSDLG0F98233HDhpPxWiGjIpiFg==
   dependencies:
     long "^4.0.0"
     protobufjs "~6.11.2"
@@ -11534,7 +11541,7 @@ eslint-plugin-flowtype@^8.0.3:
     lodash "^4.17.21"
     string-natural-compare "^3.0.1"
 
-eslint-plugin-import@^2.25.3, eslint-plugin-import@^2.25.4, eslint-plugin-import@^2.26.0:
+eslint-plugin-import@^2.25.3, eslint-plugin-import@^2.26.0:
   version "2.26.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.26.0.tgz#f812dc47be4f2b72b478a021605a59fc6fe8b88b"
   integrity sha512-hYfi3FXaM8WPLf4S1cikh/r4IxnO6zrhZbEGz2b660EJRbuxgpDS5gkCuYgGWg2xxh2rBuIr4Pvhve/7c31koA==
@@ -20821,6 +20828,18 @@ stackframe@^1.1.1:
   resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.2.0.tgz#52429492d63c62eb989804c11552e3d22e779303"
   integrity sha512-GrdeshiRmS1YLMYgzF16olf2jJ/IzxXY9lhKOskuVziubpTYcYqyOwYeJKzQkwy7uN0fYSsbsC4RQaXf9LCrYA==
 
+"standard-error@>= 1.1.0 < 2":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/standard-error/-/standard-error-1.1.0.tgz#23e5168fa1c0820189e5812701a79058510d0d34"
+  integrity sha512-4v7qzU7oLJfMI5EltUSHCaaOd65J6S4BqKRWgzMi4EYaE5fvNabPxmAPGdxpGXqrcWjhDGI/H09CIdEuUOUeXg==
+
+standard-http-error@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/standard-http-error/-/standard-http-error-2.0.1.tgz#f8ae9172e3cef9cb38d2e7084a1925f57a7c34bd"
+  integrity sha512-DX/xPIoyXQTuY6BMZK4Utyi4l3A4vFoafsfqrU6/dO4Oe/59c7PyqPd2IQj9m+ZieDg2K3RL9xOYJsabcD9IUA==
+  dependencies:
+    standard-error ">= 1.1.0 < 2"
+
 state-toggle@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/state-toggle/-/state-toggle-1.0.3.tgz#e123b16a88e143139b09c6852221bc9815917dfe"
@@ -20954,6 +20973,11 @@ string-natural-compare@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/string-natural-compare/-/string-natural-compare-3.0.1.tgz#7a42d58474454963759e8e8b7ae63d71c1e7fdf4"
   integrity sha512-n3sPwynL1nwKi3WJ6AIsClwBMa0zTi54fn2oLU6ndfTSIO05xaznjSf15PcBZU6FNWbmN5Q6cxT4V5hGvB4taw==
+
+string-similarity-js@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/string-similarity-js/-/string-similarity-js-2.1.4.tgz#73716330691946f2ebc435859aba8327afd31307"
+  integrity sha512-uApODZNjCHGYROzDSAdCmAHf60L/pMDHnP/yk6TAbvGg7JSPZlSto/ceCI7hZEqzc53/juU2aOJFkM2yUVTMTA==
 
 "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.0.0, string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.2, string-width@^4.2.3:
   version "4.2.3"
