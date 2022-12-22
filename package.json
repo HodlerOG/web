@@ -114,7 +114,7 @@
     "@visx/responsive": "^2.10.0",
     "@visx/shape": "^2.10.0",
     "@visx/tooltip": "^2.10.0",
-    "@visx/xychart": "^2.12.2",
+    "@visx/xychart": "^2.17.0",
     "@wagmi/core": "^0.5.5",
     "@walletconnect/web3-provider": "^1.7.8",
     "@wherever/react-notification-feed": "^0.0.23",
