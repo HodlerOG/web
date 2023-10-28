@@ -119,7 +119,7 @@
     "@walletconnect/web3-provider": "^1.7.8",
     "@wherever/react-notification-feed": "^0.0.23",
     "allsettled-polyfill": "^1.0.4",
-    "axios": "^0.26.1",
+    "axios": "^1.6.0",
     "bignumber.js": "^9.0.2",
     "bip39": "^3.0.4",
     "browserify-zlib": "^0.2.0",
