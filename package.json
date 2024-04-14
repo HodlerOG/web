@@ -129,7 +129,7 @@
     "crypto-browserify": "^3.12.0",
     "crypto-js": "^4.1.1",
     "dayjs": "^1.11.3",
-    "dompurify": "^2.3.8",
+    "dompurify": "^2.4.9",
     "envalid": "^7.3.1",
     "eth-url-parser": "^1.0.4",
     "framer-motion": "^6.3.11",
